@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sem Desculpas | Login </title>
+    <link rel="icon" type="image/svg+xml" href="/pit/assets/favicon.png" />
+
+    <link rel="stylesheet" href="LOGIN.css">
+</head>
+<body>
+    <div class="main-login">  
+            <div class="login-left">
+               <h1>Faça login<br>e veja nossos serviços</h1> 
+               <img src="login-img.svg" class="img-left" alt="">
+            </div>
+                <form id="entrar" action="login.php" method="POST">
+                <div class="login-right">
+                    <div class="card-login">
+                        <h1>LOGIN</h1>
+                        <div class="login">
+                            <label for="usuario">Usuário</label>
+                            <input type="text" name="usuario" placeholder="Digite seu usuário" required>
+                        </div>   
+                        <div class="login">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" placeholder="Digite sua senha" required>
+                        </div>
+                        <div class="salvar-senha">
+                            <input type="checkbox" class="check-box"><span>Salvar Senha</span>
+                        </div>
+                        <select class="escolha" name="escolha">
+                            <option value="Aluno">Aluno</option>
+                            <option value="Professor">Professor</option>
+                        </select>
+                        <input type="submit" class="btn-login" value="Entrar">
+                        <div class="nao-membro">
+                            Novo no Sem Desculpas? <a href="../landingpage/index.html">CADASTRE-SE</a>
+                        </div>
+                    </div>
+                </div>
+                  
+                </form>
+              
+    </div>
+</body>
+</html>
